@@ -24,7 +24,16 @@ class StudyTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return section == 0 ? "첫번째 섹션" : "두번째 섹션"
+        
+        if section == 0 {
+            return "맨시티 주전"
+        } else if section == 1 {
+            return "두번째 섹션"
+        } else if section == 2 {
+            return "세번째 섹션"
+        } else {
+            return "오류"
+        }
     }
     
     //1. 셀 갯수 (필수)

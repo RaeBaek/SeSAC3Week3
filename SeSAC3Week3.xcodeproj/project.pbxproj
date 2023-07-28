@@ -13,9 +13,13 @@
 		1485E8552A71FFF5008C6720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1485E8532A71FFF5008C6720 /* Main.storyboard */; };
 		1485E8572A71FFF7008C6720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1485E8562A71FFF7008C6720 /* Assets.xcassets */; };
 		1485E85A2A71FFF7008C6720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1485E8582A71FFF7008C6720 /* LaunchScreen.storyboard */; };
-		1485E8622A720FFB008C6720 /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1485E8612A720FFB008C6720 /* TodoTableViewController.swift */; };
 		1485E8642A7232DE008C6720 /* StudyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1485E8632A7232DE008C6720 /* StudyTableViewController.swift */; };
 		1485E8662A72496B008C6720 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1485E8652A72496B008C6720 /* Extension.swift */; };
+		1485E8902A73503D008C6720 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1485E88F2A73503D008C6720 /* CustomTableViewController.swift */; };
+		1485E8922A735287008C6720 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1485E8912A735287008C6720 /* CustomTableViewCell.swift */; };
+		1485E8942A7389C5008C6720 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1485E8932A7389C5008C6720 /* ToDo.swift */; };
+		1485E8962A7389FE008C6720 /* ToDoInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1485E8952A7389FE008C6720 /* ToDoInformation.swift */; };
+		1485E89A2A738ABD008C6720 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1485E8992A738ABD008C6720 /* ToDoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +31,13 @@
 		1485E8562A71FFF7008C6720 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1485E8592A71FFF7008C6720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1485E85B2A71FFF7008C6720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1485E8612A720FFB008C6720 /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		1485E8632A7232DE008C6720 /* StudyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTableViewController.swift; sourceTree = "<group>"; };
 		1485E8652A72496B008C6720 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		1485E88F2A73503D008C6720 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		1485E8912A735287008C6720 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		1485E8932A7389C5008C6720 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		1485E8952A7389FE008C6720 /* ToDoInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoInformation.swift; sourceTree = "<group>"; };
+		1485E8992A738ABD008C6720 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,16 +72,36 @@
 			children = (
 				1485E84D2A71FFF5008C6720 /* AppDelegate.swift */,
 				1485E84F2A71FFF5008C6720 /* SceneDelegate.swift */,
-				1485E8512A71FFF5008C6720 /* ViewController.swift */,
-				1485E8612A720FFB008C6720 /* TodoTableViewController.swift */,
-				1485E8632A7232DE008C6720 /* StudyTableViewController.swift */,
-				1485E8532A71FFF5008C6720 /* Main.storyboard */,
 				1485E8652A72496B008C6720 /* Extension.swift */,
+				1485E8982A738A32008C6720 /* Controllers */,
+				1485E8972A738A1B008C6720 /* Model */,
+				1485E8912A735287008C6720 /* CustomTableViewCell.swift */,
+				1485E8532A71FFF5008C6720 /* Main.storyboard */,
 				1485E8562A71FFF7008C6720 /* Assets.xcassets */,
 				1485E8582A71FFF7008C6720 /* LaunchScreen.storyboard */,
 				1485E85B2A71FFF7008C6720 /* Info.plist */,
 			);
 			path = SeSAC3Week3;
+			sourceTree = "<group>";
+		};
+		1485E8972A738A1B008C6720 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1485E8932A7389C5008C6720 /* ToDo.swift */,
+				1485E8952A7389FE008C6720 /* ToDoInformation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1485E8982A738A32008C6720 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1485E8512A71FFF5008C6720 /* ViewController.swift */,
+				1485E8992A738ABD008C6720 /* ToDoTableViewController.swift */,
+				1485E8632A7232DE008C6720 /* StudyTableViewController.swift */,
+				1485E88F2A73503D008C6720 /* CustomTableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,12 +175,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1485E8942A7389C5008C6720 /* ToDo.swift in Sources */,
 				1485E8642A7232DE008C6720 /* StudyTableViewController.swift in Sources */,
+				1485E8962A7389FE008C6720 /* ToDoInformation.swift in Sources */,
 				1485E8522A71FFF5008C6720 /* ViewController.swift in Sources */,
-				1485E8622A720FFB008C6720 /* TodoTableViewController.swift in Sources */,
+				1485E8922A735287008C6720 /* CustomTableViewCell.swift in Sources */,
 				1485E8662A72496B008C6720 /* Extension.swift in Sources */,
 				1485E84E2A71FFF5008C6720 /* AppDelegate.swift in Sources */,
+				1485E8902A73503D008C6720 /* CustomTableViewController.swift in Sources */,
 				1485E8502A71FFF5008C6720 /* SceneDelegate.swift in Sources */,
+				1485E89A2A738ABD008C6720 /* ToDoTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
